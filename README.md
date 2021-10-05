@@ -73,14 +73,21 @@ RUN python -m pip install pandas
  docker-compose build
   ```
 
-# Stop the running container
+# Stop running container
+After finishing running your scripts you may stop your running container by typing the following 
+- usage
+
+```shell
+docker stop python-qiskit
+```
+
+# Start container
+
+To start your container type the following command 
+
 
 - usage
 
 ```shell
-docker stop qiskit-dockeer
+docker start python-qiskit
 ```
-
-
-
-
