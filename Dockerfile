@@ -10,7 +10,7 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /code
 
 # Install pip requirements
-# RUN python -m pip install -r requirements.txt
+
 
 RUN python -m pip install qiskit
 RUN python -m pip install jupyterlab
@@ -18,7 +18,9 @@ RUN python -m pip install notebook
 RUN python -m pip install jupyterthemes
 RUN python -m pip install tabulate
 RUN python -m pip install pylatexenc
-# RUN pip3 install torch==1.9.0+cpu torchvision==0.10.0+cpu torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+
+## Add Python libraries for your projects/新しいらいバリをインストールする
+#example/例  RUN python -m pip install ライバリ名
 
 
 RUN jt -t solarizedl

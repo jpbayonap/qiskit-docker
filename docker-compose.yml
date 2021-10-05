@@ -6,7 +6,7 @@ services:
     container_name: python-qiskit
     image: qiskit-jupyter:latest
     build:
-      context: ./python
+      context: .
       dockerfile: Dockerfile
     command: bash -c "jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token=abcd"
     volumes:
